@@ -1,0 +1,2 @@
+# ExamenQlik
+Evaluación
