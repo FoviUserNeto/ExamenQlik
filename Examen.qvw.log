@@ -1,0 +1,120 @@
+﻿2017-06-08 17:55:07      Ejecución iniciada.
+2017-06-08 17:55:07      QlikView Desktop Version      12.0.20000.0
+2017-06-08 17:55:07      CPU Target                    x64
+2017-06-08 17:55:07      Operating System              Windows 10 Pro N  (64 bit edition)
+2017-06-08 17:55:07      Wow64 mode                    Not using Wow64
+2017-06-08 17:55:07      Language                      0c0a Español (España, internacional) Spanish
+2017-06-08 17:55:07      Country                       34 España Spain
+2017-06-08 17:55:07      MDAC Version                  6.3.9600.16384
+2017-06-08 17:55:07      MDAC Full Install Version     6.3.9600.16384
+2017-06-08 17:55:07      PreferredCompression          2
+2017-06-08 17:55:07      EnableParallelReload          1
+2017-06-08 17:55:07      ParallelizeQvdLoads           1
+2017-06-08 17:55:07      AutoSaveAfterReload           0
+2017-06-08 17:55:07      BackupBeforeReload            0
+2017-06-08 17:55:07      EnableFlushLog                0
+2017-06-08 17:55:07      SaveInfoWhenSavingFile        0
+2017-06-08 17:55:07      UserLogfileCharset            65001
+2017-06-08 17:55:07      OdbcLoginTimeout              -1
+2017-06-08 17:55:07      OdbcConnectionTimeout         -1
+2017-06-08 17:55:07      ScriptWantsDbWrite            false
+2017-06-08 17:55:07      ScriptWantsExe                false
+2017-06-08 17:55:07      LogFile CodePage Used:        65001
+2017-06-08 17:55:07      UseMemoryFillPattern          1
+2017-06-08 17:55:07      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
+2017-06-08 17:55:07      ReloadCodebase                Classic
+2017-06-08 17:55:07      Reload Executed By            RICARDO\CRIS-DARCHS
+2017-06-08 17:55:07      Process Executing             QlikView Desktop
+2017-06-08 17:55:07      Process ID                    5852
+2017-06-08 17:55:07 0002 SET ThousandSep='.'
+2017-06-08 17:55:07 0003 SET DecimalSep=','
+2017-06-08 17:55:07 0004 SET MoneyThousandSep='.'
+2017-06-08 17:55:07 0005 SET MoneyDecimalSep=','
+2017-06-08 17:55:07 0006 SET MoneyFormat='#.##0,00 €;-#.##0,00 €'
+2017-06-08 17:55:07 0007 SET TimeFormat='h:mm:ss'
+2017-06-08 17:55:07 0008 SET DateFormat='DD/MM/YYYY'
+2017-06-08 17:55:07 0009 SET TimestampFormat='DD/MM/YYYY h:mm:ss[.fff]'
+2017-06-08 17:55:07 0010 SET MonthNames='ene.;feb.;mar.;abr.;may.;jun.;jul.;ago.;sep.;oct.;nov.;dic.'
+2017-06-08 17:55:07 0011 SET DayNames='lu.;ma.;mi.;ju.;vi.;sá.;do.'
+2017-06-08 17:55:07 0012 SET LongMonthNames='enero;febrero;marzo;abril;mayo;junio;julio;agosto;septiembre;octubre;noviembre;diciembre'
+2017-06-08 17:55:07 0013 SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo'
+2017-06-08 17:55:07 0014 SET FirstWeekDay=0
+2017-06-08 17:55:07 0015 SET BrokenWeeks=0
+2017-06-08 17:55:07 0016 SET ReferenceDay=4
+2017-06-08 17:55:07 0017 SET FirstMonthOfYear=1
+2017-06-08 17:55:07 0018 SET CollationLocale='es-ES'
+2017-06-08 17:55:07 0021 Directory
+2017-06-08 17:55:07 0022 LOAD CustomerID, 
+2017-06-08 17:55:07 0023      Customer, 
+2017-06-08 17:55:07 0024      CustomerContactName, 
+2017-06-08 17:55:07 0025      CustomerCountry, 
+2017-06-08 17:55:07 0026      CustomerAddress, 
+2017-06-08 17:55:07 0027      CustomerCity, 
+2017-06-08 17:55:07 0028      CustomerPhone
+2017-06-08 17:55:07 0029 FROM
+2017-06-08 17:55:07 0030 [..\..\..\..\Downloads\Examen\Sales.xls]
+2017-06-08 17:55:07 0031 (biff, embedded labels, table is Customers$)
+2017-06-08 17:55:07      	7 campos encontrados: CustomerID, Customer, CustomerContactName, CustomerCountry, CustomerAddress, CustomerCity, CustomerPhone, 
+2017-06-08 17:55:07      92 registros leídos
+2017-06-08 17:55:07 0033 Directory
+2017-06-08 17:55:07 0034 LOAD OrderID, 
+2017-06-08 17:55:07 0035      ProductID, 
+2017-06-08 17:55:07 0036      Product, 
+2017-06-08 17:55:07 0037      CustomerID, 
+2017-06-08 17:55:07 0038      EmployeeID, 
+2017-06-08 17:55:07 0039      OrderDate, 
+2017-06-08 17:55:07 0040      Margin, 
+2017-06-08 17:55:07 0041      Sales, 
+2017-06-08 17:55:07 0042      Cost, 
+2017-06-08 17:55:07 0043      Quantity
+2017-06-08 17:55:07 0044 FROM
+2017-06-08 17:55:07 0045 [..\..\..\..\Downloads\Examen\Sales.xls]
+2017-06-08 17:55:07 0046 (biff, embedded labels, table is Orders$)
+2017-06-08 17:55:07      	10 campos encontrados: OrderID, ProductID, Product, CustomerID, EmployeeID, OrderDate, Margin, Sales, Cost, Quantity, 
+2017-06-08 17:55:07      2.212 registros leídos
+2017-06-08 17:55:07 0050 Directory
+2017-06-08 17:55:07 0051 LOAD EmpID, 
+2017-06-08 17:55:07 0052      EmployeeName
+2017-06-08 17:55:07 0053 FROM
+2017-06-08 17:55:07 0054 [..\..\..\..\Downloads\Examen\Employee.xls]
+2017-06-08 17:55:07 0055 (biff, embedded labels, table is Employees$)
+2017-06-08 17:55:07      	2 campos encontrados: EmpID, EmployeeName, 
+2017-06-08 17:55:07      47 registros leídos
+2017-06-08 17:55:07 0058 LET varMinDate = Num(Peek('OrderDate', 0, 'Orders'))
+2017-06-08 17:55:07 0060 LET varMaxDate = Num(Peek('OrderDate', -1, 'Orders'))
+2017-06-08 17:55:07 0062 LET varToday = num(today())
+2017-06-08 17:55:07 0064 TempCalendar: 
+2017-06-08 17:55:07 0065 LOAD  + rowno() - 1 AS Num, 
+2017-06-08 17:55:07 0066 date( + rowno() - 1) AS TempDate 
+2017-06-08 17:55:07 0067 AUTOGENERATE  -  + 1
+2017-06-08 17:55:07      Error: Línea de error de Script:
+2017-06-08 17:55:13 0069 MasterCalendar: 
+2017-06-08 17:55:13 0070 LOAD TempDate AS OrderDate, 
+2017-06-08 17:55:13 0071 Week(TempDate) AS Week, 
+2017-06-08 17:55:13 0072 Year(TempDate) AS Year, 
+2017-06-08 17:55:13 0073 Month(TempDate) AS Month, 
+2017-06-08 17:55:13 0074 Day(TempDate) AS Day, 
+2017-06-08 17:55:13 0075 Weekday(TempDate) AS WeekDay, 
+2017-06-08 17:55:13 0076 Date(monthstart(TempDate), 'MMM-YYYY') AS MonthYear, 
+2017-06-08 17:55:13 0077 Week(TempDate)&'-'&Year(TempDate) AS WeekYear 
+2017-06-08 17:55:13 0078 RESIDENT TempCalendar 
+2017-06-08 17:55:13 0079 ORDER BY TempDate ASC
+2017-06-08 17:55:13      Error: Tabla no encontrada
+2017-06-08 17:55:21 0083 Quarters:
+2017-06-08 17:55:21 0084 LOAD* INLINE [
+2017-06-08 17:55:21 0085 Month, Quarter
+2017-06-08 17:55:21 0086 1,Q1 
+2017-06-08 17:55:21 0087 2,Q1 
+2017-06-08 17:55:21 0088 3,Q1 
+2017-06-08 17:55:21 0089 4,Q2 
+2017-06-08 17:55:21 0090 5,Q2 
+2017-06-08 17:55:21 0091 6,Q2 
+2017-06-08 17:55:21 0092 7,Q3 
+2017-06-08 17:55:21 0093 8,Q3 
+2017-06-08 17:55:21 0094 9,Q3 
+2017-06-08 17:55:21 0095 10,Q4 
+2017-06-08 17:55:21 0096 11,Q4 
+2017-06-08 17:55:21 0097 12,Q4]
+2017-06-08 17:55:21      	2 campos encontrados: Month, Quarter, 
+2017-06-08 17:55:21      12 registros leídos
+2017-06-08 17:55:21      Ejecución finalizada.
