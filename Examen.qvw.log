@@ -1,87 +1,95 @@
-﻿2017-06-09 11:50:48      Ejecución iniciada.
-2017-06-09 11:50:48      QlikView Desktop Version      12.0.20000.0
-2017-06-09 11:50:48      CPU Target                    x64
-2017-06-09 11:50:48      Operating System              Windows 10 Pro N  (64 bit edition)
-2017-06-09 11:50:48      Wow64 mode                    Not using Wow64
-2017-06-09 11:50:48      Language                      0c0a Español (España, internacional) Spanish
-2017-06-09 11:50:48      Country                       34 España Spain
-2017-06-09 11:50:48      MDAC Version                  6.3.9600.16384
-2017-06-09 11:50:48      MDAC Full Install Version     6.3.9600.16384
-2017-06-09 11:50:48      PreferredCompression          2
-2017-06-09 11:50:48      EnableParallelReload          1
-2017-06-09 11:50:48      ParallelizeQvdLoads           1
-2017-06-09 11:50:48      AutoSaveAfterReload           0
-2017-06-09 11:50:48      BackupBeforeReload            0
-2017-06-09 11:50:48      EnableFlushLog                0
-2017-06-09 11:50:48      SaveInfoWhenSavingFile        0
-2017-06-09 11:50:48      UserLogfileCharset            65001
-2017-06-09 11:50:48      OdbcLoginTimeout              -1
-2017-06-09 11:50:48      OdbcConnectionTimeout         -1
-2017-06-09 11:50:48      ScriptWantsDbWrite            false
-2017-06-09 11:50:48      ScriptWantsExe                false
-2017-06-09 11:50:48      LogFile CodePage Used:        65001
-2017-06-09 11:50:48      UseMemoryFillPattern          1
-2017-06-09 11:50:48      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
-2017-06-09 11:50:48      ReloadCodebase                Classic
-2017-06-09 11:50:48      Reload Executed By            RICARDO\CRIS-DARCHS
-2017-06-09 11:50:48      Process Executing             QlikView Desktop
-2017-06-09 11:50:48      Process ID                    11968
-2017-06-09 11:50:48 0002 SET ThousandSep='.'
-2017-06-09 11:50:48 0003 SET DecimalSep=','
-2017-06-09 11:50:48 0004 SET MoneyThousandSep='.'
-2017-06-09 11:50:48 0005 SET MoneyDecimalSep=','
-2017-06-09 11:50:48 0006 SET MoneyFormat='#.##0,00 €;-#.##0,00 €'
-2017-06-09 11:50:48 0007 SET TimeFormat='h:mm:ss'
-2017-06-09 11:50:48 0008 SET DateFormat='DD/MM/YYYY'
-2017-06-09 11:50:48 0009 SET TimestampFormat='DD/MM/YYYY h:mm:ss[.fff]'
-2017-06-09 11:50:48 0010 SET MonthNames='ene.;feb.;mar.;abr.;may.;jun.;jul.;ago.;sep.;oct.;nov.;dic.'
-2017-06-09 11:50:48 0011 SET DayNames='lu.;ma.;mi.;ju.;vi.;sá.;do.'
-2017-06-09 11:50:48 0012 SET LongMonthNames='enero;febrero;marzo;abril;mayo;junio;julio;agosto;septiembre;octubre;noviembre;diciembre'
-2017-06-09 11:50:48 0013 SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo'
-2017-06-09 11:50:48 0014 SET FirstWeekDay=0
-2017-06-09 11:50:48 0015 SET BrokenWeeks=0
-2017-06-09 11:50:48 0016 SET ReferenceDay=4
-2017-06-09 11:50:48 0017 SET FirstMonthOfYear=1
-2017-06-09 11:50:48 0018 SET CollationLocale='es-ES'
-2017-06-09 11:50:48 0042 Employees:
-2017-06-09 11:50:48 0043 LOAD EmpID, 
-2017-06-09 11:50:48 0044      EmployeeName
-2017-06-09 11:50:48 0045 FROM
-2017-06-09 11:50:48 0046 Fuente\Employee.xls
-2017-06-09 11:50:48 0047 (biff, embedded labels, table is Employees$)
-2017-06-09 11:50:48      	2 campos encontrados: EmpID, EmployeeName, 
-2017-06-09 11:50:48      47 registros leídos
-2017-06-09 11:50:48 0052 Orders:
-2017-06-09 11:50:48 0053 LOAD OrderID, 
-2017-06-09 11:50:48 0054      ProductID, 
-2017-06-09 11:50:48 0055      Product,
-2017-06-09 11:50:48 0056      CustomerID, 
-2017-06-09 11:50:48 0057      EmployeeID, 
-2017-06-09 11:50:48 0058      OrderDate,
-2017-06-09 11:50:48 0059      applymap('Quarters_Map',num(month(OrderDate)), null()) AS Quarter, 
-2017-06-09 11:50:48 0060      Margin, 
-2017-06-09 11:50:48 0061      Sales, 
-2017-06-09 11:50:48 0062      Cost, 
-2017-06-09 11:50:48 0063      Quantity
-2017-06-09 11:50:48 0064 FROM
-2017-06-09 11:50:48 0065 Fuente\Sales.xls
-2017-06-09 11:50:48 0066 (biff, embedded labels, table is Orders$)
-2017-06-09 11:50:48      	11 campos encontrados: OrderID, ProductID, Product, CustomerID, EmployeeID, OrderDate, Quarter, Margin, Sales, Cost, Quantity, 
-2017-06-09 11:50:48      2.212 registros leídos
-2017-06-09 11:50:48 0072 Customers:
-2017-06-09 11:50:48 0073 LOAD CustomerID, 
-2017-06-09 11:50:48 0074      Customer, 
-2017-06-09 11:50:48 0075      CustomerContactName, 
-2017-06-09 11:50:48 0076      CustomerCountry, 
-2017-06-09 11:50:48 0077      CustomerAddress, 
-2017-06-09 11:50:48 0078      CustomerCity, 
-2017-06-09 11:50:48 0079      CustomerPhone
-2017-06-09 11:50:48 0080 FROM
-2017-06-09 11:50:48 0081 Fuente\Sales.xls
-2017-06-09 11:50:48 0082 (biff, embedded labels, table is Customers$)
-2017-06-09 11:50:48      	7 campos encontrados: CustomerID, Customer, CustomerContactName, CustomerCountry, CustomerAddress, CustomerCity, CustomerPhone, 
-2017-06-09 11:50:48      92 registros leídos
-2017-06-09 11:50:48 0085 LET varMinDate = Num(Peek('OrderDate', 0, 'Orders'))
-2017-06-09 11:50:48 0087 LET varMaxDate = Num(Peek('OrderDate', -1, 'Orders'))
-2017-06-09 11:50:48 0089 LET varToday = num(today())
-2017-06-09 11:50:48      Ejecución finalizada.
+﻿2017-06-12 13:28:24      Ejecución iniciada.
+2017-06-12 13:28:24      QlikView Desktop Version      12.0.20000.0
+2017-06-12 13:28:24      CPU Target                    x64
+2017-06-12 13:28:24      Operating System              Windows 10 Pro N  (64 bit edition)
+2017-06-12 13:28:24      Wow64 mode                    Not using Wow64
+2017-06-12 13:28:24      Language                      0c0a Español (España, internacional) Spanish
+2017-06-12 13:28:24      Country                       34 España Spain
+2017-06-12 13:28:24      MDAC Version                  6.3.9600.16384
+2017-06-12 13:28:24      MDAC Full Install Version     6.3.9600.16384
+2017-06-12 13:28:24      PreferredCompression          2
+2017-06-12 13:28:24      EnableParallelReload          1
+2017-06-12 13:28:24      ParallelizeQvdLoads           1
+2017-06-12 13:28:24      AutoSaveAfterReload           0
+2017-06-12 13:28:24      BackupBeforeReload            0
+2017-06-12 13:28:24      EnableFlushLog                0
+2017-06-12 13:28:24      SaveInfoWhenSavingFile        0
+2017-06-12 13:28:24      UserLogfileCharset            65001
+2017-06-12 13:28:24      OdbcLoginTimeout              -1
+2017-06-12 13:28:24      OdbcConnectionTimeout         -1
+2017-06-12 13:28:24      ScriptWantsDbWrite            false
+2017-06-12 13:28:24      ScriptWantsExe                false
+2017-06-12 13:28:24      LogFile CodePage Used:        65001
+2017-06-12 13:28:24      UseMemoryFillPattern          1
+2017-06-12 13:28:24      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
+2017-06-12 13:28:24      ReloadCodebase                Classic
+2017-06-12 13:28:24      Reload Executed By            RICARDO\CRIS-DARCHS
+2017-06-12 13:28:24      Process Executing             QlikView Desktop
+2017-06-12 13:28:24      Process ID                    148448
+2017-06-12 13:28:24 0002 SET ThousandSep='.'
+2017-06-12 13:28:24 0003 SET DecimalSep=','
+2017-06-12 13:28:24 0004 SET MoneyThousandSep='.'
+2017-06-12 13:28:24 0005 SET MoneyDecimalSep=','
+2017-06-12 13:28:24 0006 SET MoneyFormat='#.##0,00 €;-#.##0,00 €'
+2017-06-12 13:28:24 0007 SET TimeFormat='h:mm:ss'
+2017-06-12 13:28:24 0008 SET DateFormat='DD/MM/YYYY'
+2017-06-12 13:28:24 0009 SET TimestampFormat='DD/MM/YYYY h:mm:ss[.fff]'
+2017-06-12 13:28:24 0010 SET MonthNames='ene.;feb.;mar.;abr.;may.;jun.;jul.;ago.;sep.;oct.;nov.;dic.'
+2017-06-12 13:28:24 0011 SET DayNames='lu.;ma.;mi.;ju.;vi.;sá.;do.'
+2017-06-12 13:28:24 0012 SET LongMonthNames='enero;febrero;marzo;abril;mayo;junio;julio;agosto;septiembre;octubre;noviembre;diciembre'
+2017-06-12 13:28:24 0013 SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo'
+2017-06-12 13:28:24 0014 SET FirstWeekDay=0
+2017-06-12 13:28:24 0015 SET BrokenWeeks=0
+2017-06-12 13:28:24 0016 SET ReferenceDay=4
+2017-06-12 13:28:24 0017 SET FirstMonthOfYear=1
+2017-06-12 13:28:24 0018 SET CollationLocale='es-ES'
+2017-06-12 13:28:24 0042 Employees:
+2017-06-12 13:28:24 0043 LOAD EmpID as EmployeeID, 
+2017-06-12 13:28:24 0044      EmployeeName
+2017-06-12 13:28:24 0045 FROM
+2017-06-12 13:28:24 0046 Fuente\Employee.xls
+2017-06-12 13:28:24 0047 (biff, embedded labels, table is Employees$)
+2017-06-12 13:28:24      	2 campos encontrados: EmployeeID, EmployeeName, 
+2017-06-12 13:28:24      47 registros leídos
+2017-06-12 13:28:24 0052 SalesPersons: 
+2017-06-12 13:28:24 0053 LOAD 
+2017-06-12 13:28:24 0054 EmployeeID, 
+2017-06-12 13:28:24 0055 EmployeeName AS SalesPerson
+2017-06-12 13:28:24 0056 RESIDENT Employees WHERE Exists(EmployeeID)
+2017-06-12 13:28:24      	2 campos encontrados: EmployeeID, SalesPerson, 
+2017-06-12 13:28:24      47 registros leídos
+2017-06-12 13:28:24 0059 Orders:
+2017-06-12 13:28:24 0060 LOAD OrderID, 
+2017-06-12 13:28:24 0061      ProductID, 
+2017-06-12 13:28:24 0062      Product,
+2017-06-12 13:28:24 0063      CustomerID,
+2017-06-12 13:28:24 0064      EmployeeID as EmployeeSalesID, 
+2017-06-12 13:28:24 0065      EmployeeID,
+2017-06-12 13:28:24 0066      OrderDate,
+2017-06-12 13:28:24 0067      applymap('Quarters_Map',num(month(OrderDate)), null()) AS Quarter, 
+2017-06-12 13:28:24 0068      Margin, 
+2017-06-12 13:28:24 0069      Sales, 
+2017-06-12 13:28:24 0070      Cost, 
+2017-06-12 13:28:24 0071      Quantity
+2017-06-12 13:28:24 0072 FROM
+2017-06-12 13:28:24 0073 Fuente\Sales.xls
+2017-06-12 13:28:24 0074 (biff, embedded labels, table is Orders$)
+2017-06-12 13:28:24      	12 campos encontrados: OrderID, ProductID, Product, CustomerID, EmployeeSalesID, EmployeeID, OrderDate, Quarter, Margin, Sales, Cost, Quantity, 
+2017-06-12 13:28:24      2.212 registros leídos
+2017-06-12 13:28:24 0080 Customers:
+2017-06-12 13:28:24 0081 LOAD CustomerID,
+2017-06-12 13:28:24 0082 	 Customer, 
+2017-06-12 13:28:24 0083      CustomerContactName, 
+2017-06-12 13:28:24 0084      CustomerCountry, 
+2017-06-12 13:28:24 0085      CustomerAddress, 
+2017-06-12 13:28:24 0086      CustomerCity, 
+2017-06-12 13:28:24 0087      CustomerPhone
+2017-06-12 13:28:24 0088 FROM
+2017-06-12 13:28:24 0089 Fuente\Sales.xls
+2017-06-12 13:28:24 0090 (biff, embedded labels, table is Customers$)
+2017-06-12 13:28:24      	7 campos encontrados: CustomerID, Customer, CustomerContactName, CustomerCountry, CustomerAddress, CustomerCity, CustomerPhone, 
+2017-06-12 13:28:24      92 registros leídos
+2017-06-12 13:28:25 0093 LET varMinDate = Num(Peek('OrderDate', 0, 'Orders'))
+2017-06-12 13:28:25 0095 LET varMaxDate = Num(Peek('OrderDate', -1, 'Orders'))
+2017-06-12 13:28:25 0097 LET varToday = num(today())
+2017-06-12 13:28:25      Ejecución finalizada.
